@@ -1,4 +1,4 @@
-package com.soar.example.activity;
+package com.soar.example.other.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
