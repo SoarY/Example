@@ -1,5 +1,5 @@
-# Android Example
-Android样例代码
+# Example
+包含一些常用Android Code
 ## Demo
 [Download](https://github.com/SoarY/Example/blob/master/file/example.apk?raw=true)
 
