@@ -55,17 +55,17 @@ public class HookActivity extends AppCompatActivity implements View.OnClickListe
      * 静态代理hook
      */
     private void hookClickListener(View view) throws Exception {
-        // 第一步：反射得到 ListenerInfo 对象
+        // 第一步：反射得到 ListenerInfo 对象 OnClickListener事件方法字段
         Method getListenerInfo = View.class.getDeclaredMethod("getListenerInfo");
         getListenerInfo.setAccessible(true);
         Object listenerInfo = getListenerInfo.invoke(view);
-        // 第二步：得到原始的 OnClickListener事件方法
         Class<?> listenerInfoClz = Class.forName("android.view.View$ListenerInfo");
         Field mOnClickListener = listenerInfoClz.getDeclaredField("mOnClickListener");
         mOnClickListener.setAccessible(true);
         View.OnClickListener originOnClickListener = (View.OnClickListener) mOnClickListener.get(listenerInfo);
-        // 第三步：用 Hook代理类 替换原始的 OnClickListener
+        // 第二步：自定义静态代理对象
         View.OnClickListener hookedOnClickListener = new HookedClickListenerProxy(originOnClickListener);
+        // 第三步：用 Hook代理类 替换原始的 OnClickListener
         mOnClickListener.set(listenerInfo, hookedOnClickListener);
     }
 
