@@ -5,27 +5,20 @@
     android:orientation="vertical">
 
     <Button
-        android:id="@+id/bt_1"
+        android:id="@+id/bt_click_hook"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginTop="10dp"
         android:gravity="center"
-        android:text="设计模式" />
+        android:text="click hook" />
 
     <Button
-        android:id="@+id/bt_2"
+        android:id="@+id/bt_notification_hook"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginTop="10dp"
         android:gravity="center"
-        android:text="热修复" />
+        android:text="notification hook" />
 
-    <Button
-        android:id="@+id/bt_3"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginTop="10dp"
-        android:gravity="center"
-        android:text="Hook技术" />
 
 </LinearLayout>

@@ -11,7 +11,7 @@ import com.soar.example.other.constant.DangerousPermissions;
 import com.soar.example.other.utils.PermissionsUtils;
 
 /**
- * https://www.jianshu.com/p/a0e687e0904f
+ * https://www.jianshu.com/p/d17519d4952e
  */
 public class FixActivity extends AppCompatActivity implements View.OnClickListener {
 

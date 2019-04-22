@@ -18,7 +18,7 @@ import dalvik.system.PathClassLoader;
 /**
  * NAME：YONG_
  * Created at: 2019/4/19
- * Describe: https://www.jianshu.com/p/d17519d4952e
+ * Describe:
  */
 public class HotFixEngine {
 
